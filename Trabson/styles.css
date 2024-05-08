@@ -1,5 +1,3 @@
-
-
 /*Usei um reset de CSS*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,9 +49,9 @@ body{
 
 }
 
-
+/*Posicionamento e ocupação da página ao cabeçalho*/
 .header{
-    color:white;
+    color:black;
     background-color: #121212;
     list-style-type: none;
     overflow: hidden;
@@ -65,25 +63,28 @@ body{
     width: 100%;
 }
 
+/*Colorização */
 .header a{
     float: left;
-    color: red;
+    color: whitesmoke;
     text-align: center;
-    padding: 15px 15px;
+    padding: 10px 10px;
     text-decoration: none;
     font: 18px;
 }
 
+/*Muda a cor quando o mouse estiver por cima*/
 .header a:hover{
-    background-color: blueviolet;
+    background-color: white;
     color: #121212;
 }
 
+/*Muda a cor da letra para sinalizar que é bem ali onde está na página*/
 .header a.active{
-    color: palevioletred;
-    background-color: aquamarine;
+    color: red;
 }
 
+/*Mesmo estilo para o cabeçalho no rodapé, mas menor para ocupar menos espaço na tela*/
 .footer{
     color:white;
     background-color: #121212;
@@ -100,7 +101,7 @@ body{
 
 .footer a{
     float: left;
-    color: red;
+    color: whitesmoke;
     text-align: center;
     padding: 7px 7px;
     text-decoration: none;
@@ -108,8 +109,12 @@ body{
 }
 
 .footer a:hover{
-    background-color: blueviolet;
-    color: #121212;
+    background-color: #121212;
+    color: white;
+}
+
+.footer a.active{
+    color:red;
 }
 
 section{
