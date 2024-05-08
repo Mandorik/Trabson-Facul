@@ -1,0 +1,124 @@
+
+
+/*Usei um reset de CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* Útil para navegadores mais antiquados */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+.header{
+    color:white;
+    background-color: #121212;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header a{
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font: 18px;
+}
+
+.header a:hover{
+    background-color: blueviolet;
+    color: #121212;
+}
+
+.header a.active{
+    color: palevioletred;
+    background-color: aquamarine;
+}
+
+.footer{
+    color:white;
+    background-color: #121212;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer a{
+    float: left;
+    color: red;
+    text-align: center;
+    padding: 7px 7px;
+    text-decoration: none;
+    font: 10px;
+}
+
+.footer a:hover{
+    background-color: blueviolet;
+    color: #121212;
+}
+
+section{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.home-section{
+    margin-top: 50px;
+}
