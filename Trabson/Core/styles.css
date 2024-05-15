@@ -1,0 +1,159 @@
+/*Posicionamento e ocupação da página ao cabeçalho*/
+.header {
+    color: black;
+    background-color: #121212;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*Colorização */
+.header a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.5% 0.5%;
+    text-decoration: none;
+    width: 100%;
+    font: 18px;
+}
+
+/*Muda a cor quando o mouse estiver por cima*/
+.header a:hover {
+    background-color: white;
+    color: #121212;
+}
+
+/*Muda a cor da letra quando esta seção estiver ativa para sinalizar que é bem ali onde se está*/
+.header a.active {
+    color: red;
+}
+
+/*Mesmo estilo para o cabeçalho no rodapé, mas menor para ocupar menos espaço na tela*/
+.footer {
+    color: white;
+    background-color: #121212;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer a {
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.3% 0.3%;
+    text-decoration: none;
+    font: 10px;
+}
+
+/*Muda a cor do rodapé quando o mouse estiver por cima*/
+.footer a:hover {
+    background-color: whitesmoke;
+    color: #121212;
+}
+
+/*Muda a cor da letra quando esta seção estiver ativa para sinalizar que é bem ali onde se está*/
+.footer a.active {
+    color: red;
+}
+
+section {
+    text-align: center;
+    align-items: center;
+    padding: 2%;
+    margin: 3%;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilização Específica pras tabelas de Formação Acadêmica*/
+sectionTitle {
+    text-align: center;
+    align-items: center;
+    padding: 1vh;
+    width: auto;
+    overflow: hidden;
+}
+
+.home-section {
+    margin-top: 23px;
+    margin-bottom: 3px;
+}
+
+table {
+    margin: 3%;
+    width: 50%;
+    /*border:1px solid black; Pensei primeiramente em fazer com borda, mas preferi deixar sem*/
+    margin-left: 25%;
+    margin-right: 20%;
+    text-align: center;
+    align-items: center;
+}
+
+pWarning {
+    /*Marquei como vermelho e naveguei pelo RGB para deixá-lo um pouco mais escuro*/
+    color: rgb(202, 9, 9);
+    font-weight: bold;
+}
+
+input.like {
+    height: 3vh;
+    width: 7vw;
+}
+
+img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+/*Classe para ordenar linhas da tabela à esquerda*/
+.setLeft {
+    text-align: left;
+}
+
+/*Alinhando as linhas da lista para que fiquem alinhadas à esquerda e fiquem ao meio da tela como um índice de verdade*/
+li {
+    list-style-position: inside;
+    text-align: left;
+    margin-left: 41%;
+}
+
+
+.displayFlex {
+    display: flex;
+    flex-direction: column;
+}
+
+.formAlign {
+    width: 90%;
+    margin: 1%;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+
+    /*Isso faz o espaço do form pra Nome e e-mail fiquem do mesmo tamanho do textarea para comentário*/
+    input:not(.like) {
+        /*Nesse caso ele tava pegando todos os inputs, precisei setar que os que não sejam .like (o botão de enviar)*/
+        width: 61%;
+    }
+}
+
+/*Formúlario tava apertado sem essa demarcação de width*/
+.formHalf {
+    width: 50%
+}
+
+h2 {
+    font-size: 40px;
+}
